@@ -1,0 +1,6 @@
+# exercism
+*/.exercism
+
+# Gradle
+*/.gradle
+*/build
