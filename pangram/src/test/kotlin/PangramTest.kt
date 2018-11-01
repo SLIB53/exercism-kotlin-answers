@@ -53,5 +53,4 @@ class PangramTest {
     fun mixedCaseDuplicatedCharacters() {
         assertFalse(Pangram.isPangram("the quick brown fox jumps over with lazy FX"))
     }
-
 }
