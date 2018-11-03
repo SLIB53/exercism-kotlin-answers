@@ -3,7 +3,7 @@
 
 projpath=$(pwd)
 
-for solutiondir in $(ls -d */ | grep -v "_scripts" | sort)
+for solutiondir in $(ls -d */ | grep -v "_scripts")
 do
     cd "$projpath/$solutiondir"
     
