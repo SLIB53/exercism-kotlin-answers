@@ -14,6 +14,18 @@ Each solution is a tiny gradle project. Run `gradle test` in any solution subfol
 pushd <EXERCISE_DIRNAME>; gradle test; popd
 ```
 
+To run all the tests, use the `test_all.sh` script.
+
+```sh
+sh _scripts/test_all.sh
+```
+
+Alternatively, tests can be run from a container using the ['Test.Dockerfile'](./Test.Dockerfile). This will run tests on build.
+
+```sh
+docker build --tag exercism-kotlin-answers:latest .
+```
+
 
 Further Thoughts
 --------------------------------------------------------------------------------
