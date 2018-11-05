@@ -1,6 +1,5 @@
 object Pangram {
-    fun isPangram(sentence: String): Boolean {
-        return sentence.toLowerCase().toSet()
+    fun isPangram(sentence: String) =
+        sentence.toLowerCase().toSet()
             .containsAll(('a'..'z').toSet())
-    }
 }

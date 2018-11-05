@@ -1,13 +1,11 @@
-fun transcribeToRna(dna: String): String {
-    val rnaNucleotides = dna.map({ n ->
-        when (n) {
+fun transcribeToRna(dna: String) =
+    dna.map {
+        when (it) {
             'G' -> 'C'
             'C' -> 'G'
             'T' -> 'A'
             'A' -> 'U'
             else -> throw IllegalArgumentException()
         }
-    })
-
-    return rnaNucleotides.joinToString("")
-}
+    }
+    .joinToString("")

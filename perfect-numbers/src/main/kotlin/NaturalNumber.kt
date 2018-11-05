@@ -15,10 +15,7 @@ fun classify(naturalNumber: Int): Classification {
     }
 }
 
-fun aliquotSum(naturalNumber: Int): Int {
-    return factors(naturalNumber).sum()
-}
+fun aliquotSum(naturalNumber: Int) = factors(naturalNumber).sum()
 
-fun factors(naturalNumber: Int): List<Int> {
-    return (1..(naturalNumber / 2)).filter { naturalNumber % it == 0 }
-}
+fun factors(naturalNumber: Int) =
+    (1..(naturalNumber / 2)).filter { naturalNumber % it == 0 }
